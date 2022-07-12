@@ -1,3 +1,4 @@
+package ru.netology.poster;
 public class MovieManager {
     protected String[] movies = new String[0];
     protected int limit;
@@ -31,7 +32,7 @@ public class MovieManager {
         if (movies.length < limit) {
             resultLength = movies.length;
         } else {
-            resultLength = 10;
+            resultLength = limit;
         }
         String ans[] = new String[resultLength];
         for (int i = 0; i < ans.length; i++) {
